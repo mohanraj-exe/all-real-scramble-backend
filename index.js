@@ -12,8 +12,15 @@ dbConnect();
 // Middleware to parse JSON
 app.use(express.json());
 
+// const corsOptions = {
+//     origin: 'http://localhost:5173',
+//     methods: ['GET', 'POST', 'PATCH', 'PUT', 'DELETE'],
+//     allowedHeaders: ['Content-Type', 'Authorization'],
+//     credentials: true
+// };
+
 const corsOptions = {
-    origin: 'http://localhost:5173',
+    origin: 'https://all-real-word-scramble-frontend.netlify.app',
     methods: ['GET', 'POST', 'PATCH', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true
