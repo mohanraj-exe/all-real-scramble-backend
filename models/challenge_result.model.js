@@ -3,8 +3,8 @@ const mongoose = require('mongoose');
 // Schema
 const ChallengeResultSchema = new mongoose.Schema({
 
-    score: { type: String },
-    time: { type: String },
+    score: { type: Number },
+    timeTakenInSeconds: { type: Number },
     answer: { type: String },
     ansRef: { type: mongoose.Types.ObjectId, ref: 'word' }
 
